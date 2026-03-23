@@ -5,7 +5,7 @@ DROP TABLE Galerias CASCADE CONSTRAINTS;
 DROP TABLE Eventos CASCADE CONSTRAINTS;
 DROP TABLE Usuarios CASCADE CONSTRAINTS;
 
--- Tabla Usuarios [cite: 106-110]
+-- Tabla Usuarios
 CREATE TABLE Usuarios (
     id NUMBER PRIMARY KEY,
     nombre VARCHAR2(100) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE Usuarios (
     password VARCHAR2(255) NOT NULL
 );
 
--- Tabla Eventos [cite: 111-117]
+-- Tabla Eventos
 CREATE TABLE Eventos (
     id NUMBER PRIMARY KEY,
     fecha DATE NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE Eventos (
     descripcion VARCHAR2(500)
 );
 
--- Tabla Galerias [cite: 120-123]
+-- Tabla Galerias
 CREATE TABLE Galerias (
     id NUMBER PRIMARY KEY,
     titulo VARCHAR2(150) NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE Galerias (
     CONSTRAINT fk_galeria_evento FOREIGN KEY (id_evento) REFERENCES Eventos(id) ON DELETE CASCADE
 );
 
--- Tabla Imagenes [cite: 124-128]
+-- Tabla Imagenes
 CREATE TABLE Imagenes (
     id NUMBER PRIMARY KEY,
     titulo VARCHAR2(150) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE Imagenes (
     CONSTRAINT fk_img_galeria FOREIGN KEY (id_galeria) REFERENCES Galerias(id) ON DELETE CASCADE
 );
 
--- Tabla Favoritos [cite: 129-131]
+-- Tabla Favoritos
 CREATE TABLE Favoritos (
     id_usuario NUMBER NOT NULL,
     id_evento NUMBER NOT NULL,
@@ -48,13 +48,13 @@ CREATE TABLE Favoritos (
     CONSTRAINT fk_fav_e FOREIGN KEY (id_evento) REFERENCES Eventos(id) ON DELETE CASCADE
 );
 
--- Usuarios (Mínimo 3) [cite: 98]
+-- Usuarios (Mínimo 3)
 INSERT INTO Usuarios (id, nombre, email, password) VALUES (1, 'Ana Garcia', 'ana@email.com', '1234');
 INSERT INTO Usuarios (id, nombre, email, password) VALUES (2, 'Carlos Lopez', 'carlos@email.com', '1234');
 INSERT INTO Usuarios (id, nombre, email, password) VALUES (3, 'Bea Martin', 'bea@email.com', '1234');
 
--- Eventos (Los 6 obligatorios con sus fechas exactas) [cite: 101]
--- 3 del historial (antes del 28-02-2026) y 3 próximos [cite: 97]
+-- Eventos (Los 6 obligatorios con sus fechas exactas)
+-- 3 del historial (antes del 28-02-2026) y 3 próximos
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (1, TO_DATE('2026-01-01','YYYY-MM-DD'), 'Concierto Año Nuevo', 'Teatro Jovellanos', 'Musica clasica');
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (2, TO_DATE('2026-01-12','YYYY-MM-DD'), 'Exposicion Foto', 'Centro Cultural', 'Arte moderno');
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (3, TO_DATE('2026-01-24','YYYY-MM-DD'), 'Obra de Teatro', 'Teatro Campoamor', 'Comedia');
@@ -62,12 +62,12 @@ INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (4, TO_DA
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (5, TO_DATE('2026-06-15','YYYY-MM-DD'), 'Feria del Libro', 'Plaza Mayor', 'Literatura');
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (6, TO_DATE('2026-06-25','YYYY-MM-DD'), 'Cine de Verano', 'Playa de Poniente', 'Peliculas');
 
--- Galerias (Una para cada evento del historial: 1, 2 y 3) [cite: 99]
+-- Galerias (Una para cada evento del historial: 1, 2 y 3)
 INSERT INTO Galerias (id, titulo, id_evento) VALUES (10, 'Fotos Concierto', 1);
 INSERT INTO Galerias (id, titulo, id_evento) VALUES (20, 'Fotos Expo', 2);
 INSERT INTO Galerias (id, titulo, id_evento) VALUES (30, 'Fotos Teatro', 3);
 
--- Imagenes (Mínimo 3 por galeria) [cite: 99]
+-- Imagenes (Mínimo 3 por galeria)
 INSERT INTO Imagenes (id, titulo, imagen, id_galeria) VALUES (101, 'Orquesta', 'img1.jpg', 10);
 INSERT INTO Imagenes (id, titulo, imagen, id_galeria) VALUES (102, 'Director', 'img2.jpg', 10);
 INSERT INTO Imagenes (id, titulo, imagen, id_galeria) VALUES (103, 'Publico', 'img3.jpg', 10);
@@ -80,7 +80,7 @@ INSERT INTO Imagenes (id, titulo, imagen, id_galeria) VALUES (301, 'Escenario', 
 INSERT INTO Imagenes (id, titulo, imagen, id_galeria) VALUES (302, 'Actores', 'img8.jpg', 30);
 INSERT INTO Imagenes (id, titulo, imagen, id_galeria) VALUES (303, 'Aplausos', 'img9.jpg', 30);
 
--- Favoritos (3 por usuario, 2 deben ser del historial) [cite: 100]
+-- Favoritos (3 por usuario, 2 deben ser del historial)
 INSERT INTO Favoritos (id_usuario, id_evento) VALUES (1, 1); -- Historial
 INSERT INTO Favoritos (id_usuario, id_evento) VALUES (1, 2); -- Historial
 INSERT INTO Favoritos (id_usuario, id_evento) VALUES (1, 4); -- Proximo
