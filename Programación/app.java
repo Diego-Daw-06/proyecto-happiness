@@ -1,5 +1,8 @@
-import model.*;
-import java.util.*;
+import java.util.Scanner;
+import java.util.HashMap;
+import java.util.ArrayList;
+
+import Proyecto.*;
 
 public class app {
     public static void main(String[] args) {
@@ -103,7 +106,7 @@ public class app {
                     System.out.print("ID de la galería a eliminar: ");
                     int idGalEliminar = Integer.parseInt(sc.nextLine());
         
-        // Buscar y eliminar de la colección
+                    // Buscar y eliminar de la colección
                     boolean eliminada = gals.removeIf(g -> g.getId() == idGalEliminar);
                     if (eliminada) System.out.println("Galería eliminada correctamente");
                     else System.out.println("La galería no existe");

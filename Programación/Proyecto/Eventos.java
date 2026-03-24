@@ -1,4 +1,4 @@
-package model;
+package Proyecto;
 import java.util.ArrayList;
 public class Eventos {
 
