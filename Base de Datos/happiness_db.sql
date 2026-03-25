@@ -48,14 +48,14 @@ CREATE TABLE Favoritos (
     CONSTRAINT fk_fav_e FOREIGN KEY (id_evento) REFERENCES Eventos(id) ON DELETE CASCADE
 );
 
--- Usuarios (Mínimo 3)
+-- Usuarios (Mï¿½nimo 3)
 INSERT INTO Usuarios (id, nombre, email, password) VALUES (1, 'Ana Garcia', 'ana@email.com', '1234');
 INSERT INTO Usuarios (id, nombre, email, password) VALUES (2, 'Carlos Lopez', 'carlos@email.com', '1234');
 INSERT INTO Usuarios (id, nombre, email, password) VALUES (3, 'Bea Martin', 'bea@email.com', '1234');
 
 -- Eventos (Los 6 obligatorios con sus fechas exactas)
--- 3 del historial (antes del 28-02-2026) y 3 próximos
-INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (1, TO_DATE('2026-01-01','YYYY-MM-DD'), 'Concierto Año Nuevo', 'Teatro Jovellanos', 'Musica clasica');
+-- 3 del historial (antes del 28-02-2026) y 3 prï¿½ximos
+INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (1, TO_DATE('2026-01-01','YYYY-MM-DD'), 'Concierto de Jazz en la Costa', 'Playa San Lorenzo', 'Musica en vivo');
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (2, TO_DATE('2026-01-12','YYYY-MM-DD'), 'Exposicion Foto', 'Centro Cultural', 'Arte moderno');
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (3, TO_DATE('2026-01-24','YYYY-MM-DD'), 'Obra de Teatro', 'Teatro Campoamor', 'Comedia');
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (4, TO_DATE('2026-06-05','YYYY-MM-DD'), 'Festival Indie', 'Parque de los Pericones', 'Musica alternativa');
@@ -67,7 +67,7 @@ INSERT INTO Galerias (id, titulo, id_evento) VALUES (10, 'Fotos Concierto', 1);
 INSERT INTO Galerias (id, titulo, id_evento) VALUES (20, 'Fotos Expo', 2);
 INSERT INTO Galerias (id, titulo, id_evento) VALUES (30, 'Fotos Teatro', 3);
 
--- Imagenes (Mínimo 3 por galeria)
+-- Imagenes (Mï¿½nimo 3 por galeria)
 INSERT INTO Imagenes (id, titulo, imagen, id_galeria) VALUES (101, 'Orquesta', 'img1.jpg', 10);
 INSERT INTO Imagenes (id, titulo, imagen, id_galeria) VALUES (102, 'Director', 'img2.jpg', 10);
 INSERT INTO Imagenes (id, titulo, imagen, id_galeria) VALUES (103, 'Publico', 'img3.jpg', 10);
@@ -107,7 +107,7 @@ WHERE f.id_usuario = 1;
 
 -- 3. Imagenes de la galeria del evento 12-01-2026 (ID es 2)
 SELECT i.* FROM Imagenes i 
-WHERE i.id_galeria = 20; -- Usamos el ID de la galería que creamos para el evento 2
+WHERE i.id_galeria = 20; -- Usamos el ID de la galerï¿½a que creamos para el evento 2
 
 -- 4. Favoritos usuario 2 posteriores al 28-02-2026
 SELECT e.* FROM Eventos e 
