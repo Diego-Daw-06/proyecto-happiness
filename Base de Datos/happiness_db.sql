@@ -55,9 +55,9 @@ INSERT INTO Usuarios (id, nombre, email, password) VALUES (3, 'Bea Martin', 'bea
 
 -- Eventos (Los 6 obligatorios con sus fechas exactas)
 -- 3 del historial (antes del 28-02-2026) y 3 pr�ximos
-INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (1, TO_DATE('2026-01-01','YYYY-MM-DD'), 'Concierto de Jazz en la Costa', 'Playa San Lorenzo', 'Musica en vivo');
+INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (1, TO_DATE('2026-01-01','YYYY-MM-DD'), 'Concierto Año Nuevo de Jazz en la Costa', 'Playa San Lorenzo', 'Musica en vivo');
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (2, TO_DATE('2026-01-12','YYYY-MM-DD'), 'Exposicion Foto', 'Centro Cultural', 'Arte moderno');
-INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (3, TO_DATE('2026-01-24','YYYY-MM-DD'), 'Obra de Teatro', 'Teatro Campoamor', 'Comedia');
+INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (3, TO_DATE('2026-01-24','YYYY-MM-DD'), 'Representación de la Celestina', 'Teatro Palacio Valdes', 'Teatro clasico');
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (4, TO_DATE('2026-06-05','YYYY-MM-DD'), 'Festival Indie', 'Parque de los Pericones', 'Musica alternativa');
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (5, TO_DATE('2026-06-15','YYYY-MM-DD'), 'Feria del Libro', 'Plaza Mayor', 'Literatura');
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES (6, TO_DATE('2026-06-25','YYYY-MM-DD'), 'Cine de Verano', 'Playa de Poniente', 'Peliculas');
