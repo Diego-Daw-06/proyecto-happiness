@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPINESS&Co - Sobre Nosotros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="text-gray-800 flex flex-col min-h-screen">
+    
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-1 mb-4 sm:mb-0">
+                <span class="logo-text">HAPPINESS</span>
+                <span class="logo-amp">&</span>
+                <span class="logo-text text-xl">Co</span>
+            </a>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6 text-sm font-semibold">
+                    <li><a href="index.html" class="hover:text-musica transition">Inicio</a></li>
+                    <li><a href="eventos.html" class="hover:text-musica transition">Próximos Eventos</a></li>
+                    <li><a href="historial.html" class="hover:text-musica transition">Historial de eventos</a></li>
+                    <li><a href="about.html" class="text-musica border-b-2 border-musica pb-1">Sobre Nosotros</a></li>
+                    <li><a href="fuentes.html" class="hover:text-musica transition">Fuentes</a></li>
+                    <li><a href="contacto.html" class="hover:text-musica transition">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-4xl mx-auto px-4 py-12 w-full">
+        <!-- Texto explicativo con > 3 imágenes intercaladas -->
+        <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center border-b pb-4">Nuestra Empresa</h1>
+        
+        <div class="prose max-w-none text-gray-700 space-y-8 text-lg">
+            
+            <p>
+                <strong>HAPPINESS&Co</strong> es una empresa joven y dinámica que se dedica, en cuerpo y alma, al mundo del ocio.
+                Perdidos entre la inmensa marea de actividades culturales que existen cada día en nuestra ciudad, nos dimos cuenta 
+                de que hacía falta buscar un poco de orden y estructura en este inmenso océano de posibilidades. 
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&fit=crop" alt="Equipo analizando datos de eventos" class="w-full rounded-xl shadow-lg my-8 h-80 object-cover">
+            
+            <p>
+                Y así surgió HAPPINESS&Co: una agenda cultural que intenta recopilar y organizar todos los eventos culturales, 
+                de cualquier tipo, que tienen lugar en nuestra localidad e inmediaciones. Creemos en la cultura accesible 
+                y en facilitar a los creadores una plataforma donde sus voces puedan ser escuchadas alto y claro.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&fit=crop" alt="Equipo en reunión" class="w-full rounded-xl shadow-lg my-8 h-80 object-cover">
+
+            <p>
+                Música, teatro, exposiciones... Todo tiene cabida en nuestra agenda. Nos enorgullecemos de la neutralidad y la 
+                pasión por el arte. Nuestro trabajo diario es el puente directo entre la comunidad y los artistas. 
+                Así que... ¡Bienvenidos a HAPPINESS&Co!
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&fit=crop" alt="Comunidad sonriendo" class="w-full rounded-xl shadow-lg my-8 h-80 object-cover">
+
+        </div>
+
+        <hr class="my-12 border-gray-300">
+
+        <!-- Personal (Al menos 3 miembros) -->
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 border-b pb-2">Nuestro Personal</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Miembro 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6 text-center border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Carlos Mendoza" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow">
+                <h3 class="text-xl font-bold text-gray-900">Carlos Mendoza</h3>
+                <p class="text-musica font-semibold mb-3">Director General (CEO)</p>
+                <p class="text-sm text-gray-600 line-clamp-4">Carlos es un emprendedor nato con un máster en gestión cultural. Lleva 10 años promoviendo la escena local y fundó esta empresa buscando conectar a los artistas con el público.</p>
+            </div>
+
+            <!-- Miembro 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6 text-center border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop" alt="Laura García" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow">
+                <h3 class="text-xl font-bold text-gray-900">Laura García</h3>
+                <p class="text-cine font-semibold mb-3">Directora de Contenidos</p>
+                <p class="text-sm text-gray-600 line-clamp-4">Laura es crítica de arte y periodista. Es la responsable de que cada texto y publicación en nuestro sitio capture la esencia de los eventos antes de que lleguen a realizarse.</p>
+            </div>
+
+            <!-- Miembro 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6 text-center border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop" alt="David Rodríguez" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow">
+                <h3 class="text-xl font-bold text-gray-900">David Rodríguez</h3>
+                <p class="text-expo font-semibold mb-3">Director Técnico (CTO)</p>
+                <p class="text-sm text-gray-600 line-clamp-4">Ingeniero informático experto en bases de datos y backend. David asegura que la agenda de HAPPINESS&Co esté siempre online, optimizada y responda sin retardos.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <p class="font-bold text-xl tracking-wider mb-2 text-gray-200">HAPPINESS&Co</p>
+                <p class="text-gray-400 text-sm">&copy; 2026 Todos los derechos reservados.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition">FaceBook</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

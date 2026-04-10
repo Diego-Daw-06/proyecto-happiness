@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPINESS&Co - Detalles del Evento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="text-gray-800 flex flex-col min-h-screen bg-gray-50">
+    
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-1 mb-4 sm:mb-0">
+                <span class="logo-text">HAPPINESS</span>
+                <span class="logo-amp">&</span>
+                <span class="logo-text text-xl">Co</span>
+            </a>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6 text-sm font-semibold">
+                    <li><a href="index.html" class="hover:text-musica transition">Inicio</a></li>
+                    <li><a href="eventos.html" class="hover:text-musica transition">Próximos Eventos</a></li>
+                    <li><a href="historial.html" class="hover:text-musica transition">Historial de eventos</a></li>
+                    <li><a href="about.html" class="hover:text-musica transition">Sobre Nosotros</a></li>
+                    <li><a href="fuentes.html" class="hover:text-musica transition">Fuentes</a></li>
+                    <li><a href="contacto.html" class="hover:text-musica transition">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-12 w-full grid grid-cols-1 lg:grid-cols-4 gap-8">
+        
+        <article class="lg:col-span-3 bg-white rounded-xl shadow-lg overflow-hidden">
+            <!-- Imagen del evento / cartel -->
+            <img id="event-image" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=500&fit=crop" alt="Cartel del Evento" class="w-full h-64 sm:h-96 object-cover">
+            
+            <div class="p-8">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 gap-2">
+                    <div class="flex items-center gap-3">
+                        <span id="event-badge" class="badge bg-musica">Música</span>
+                        <span id="event-price" class="hidden text-xs font-bold bg-pink-100 text-musica px-3 py-1 rounded-full border border-pink-200"></span>
+                    </div>
+                    <span id="event-status" class="hidden text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded font-bold uppercase tracking-wider">Ya celebrado</span>
+                </div>
+                <h1 id="event-title" class="text-4xl font-bold text-gray-900 mb-4">Noche de Jazz en Vivo</h1>
+                
+                <div class="flex flex-wrap gap-6 text-gray-600 mb-8 border-b border-gray-200 pb-6">
+                    <p class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-musica" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <strong class="mr-1">Fecha:</strong> <span id="event-date">05-06-2026</span>
+                    </p>
+                    <p class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-musica" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <strong class="mr-1">Lugar:</strong> <span id="event-location">Centro Cultural Municipal</span>
+                    </p>
+                </div>
+
+                <div class="prose max-w-none text-gray-700 text-lg space-y-4">
+                    <p id="event-description">
+                        Disfruta de una velada excepcional con las mejores bandas de jazz de la región. Vive la magia de The Blue Notes Quarter tocando sus temas más exitosos bajo el firmamento. La entrada incluye una consumición y acceso preferente. ¡Garantizamos una experiencia sonora inigualable para los amantes del saxofón y los ritmos improvisados!
+                    </p>
+                </div>
+
+                <!-- GALERÍA DINÁMICA (Solo visible para eventos pasados) -->
+                <div id="gallery-container" class="hidden mt-12 bg-gray-50 -mx-8 -mb-8 p-8 border-t border-gray-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Galería del Evento</h3>
+                    <div class="galeria">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=300&h=300&fit=crop" alt="Recuerdo 1">
+                        <img src="https://images.unsplash.com/photo-1540039155732-684735035727?w=300&h=300&fit=crop" alt="Recuerdo 2">
+                        <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=300&h=300&fit=crop" alt="Recuerdo 3">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&h=300&fit=crop" alt="Recuerdo 4">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Lateral: Recomendados -->
+        <aside class="lg:col-span-1">
+            <h3 class="text-xl font-bold text-gray-900 mb-6 border-b pb-2">Recomendados</h3>
+            <div class="space-y-6">
+                <!-- Recomendado Historial -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="font-bold text-gray-900 mb-2">Conciertos y más</h4>
+                    <p class="text-xs text-gray-600 mb-2">Tenemos la mayor red de festivales de la región disponibles en las mejores ubicaciones.</p>
+                </div>
+                
+                <div class="flex items-start bg-white p-3 rounded-lg shadow hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=100&h=100&fit=crop" alt="Rec" class="w-16 h-16 rounded object-cover mr-3">
+                    <div>
+                        <div class="text-xs text-gray-500 font-semibold">25-06-2026</div>
+                        <h4 class="text-sm font-bold text-gray-900 leading-tight mb-1">Expresionismo</h4>
+                        <a href="evento.html?id=6" class="text-xs text-expo font-bold hover:underline">Ver recomendación</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <p class="font-bold text-xl tracking-wider mb-2 text-gray-200">HAPPINESS&Co</p>
+                <p class="text-gray-400 text-sm">&copy; 2026 Todos los derechos reservados.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition">FaceBook</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lógica en cliente para simular base de datos / PDF (solo para mostrar el requerimiento formativo) -->
+    <script>
+        // Simulador de BD de acuerdo a las bases
+        const eventosDB = {
+            "1": { titulo: "Concierto de Año Nuevo de Jazz en la costa", fecha: "01-01-2026", lugar: "Costa Asturiana", desc: "El mayor evento musical del comienzo del año junto al mar. Disfrutamos inaugurando el año con asombrosos artistas locales de Jazz e internacionales.", cat: "bg-musica", label: "Música", img: "img/jazz.png", esPasado: true },
+            "2": { titulo: "Festival IN-EDIT Gijón", fecha: "12-01-2026", lugar: "Gijón", desc: "La nueva edición del prestigioso festival de cine documental musical IN-EDIT llega a Gijón. Se presentarán multitud de películas, cortos y documentales indispensables sobre los artistas que revolucionaron la historia universal de la música.", cat: "bg-cine", label: "Cine", img: "img/in-edit.png", esPasado: true },
+            "3": { titulo: "Arte Moderno", fecha: "24-01-2026", lugar: "Museo Central", desc: "Bienal internacional de arte moderno pictórico.", cat: "bg-expo", label: "Exposición", img: "photo-1462684590040-2a5ffb1d4d60", esPasado: true },
+            "4": { titulo: "Desafío Lagos de Covadonga", fecha: "05-06-2026", lugar: "Cangas de Onís, Lagos de Covadonga", desc: "La mítica prueba cicloturista asturiana rodeando los lagos glaciares del Parque Nacional Picos de Europa. Un reto deportivo inigualable.", cat: "bg-otro", label: "Deporte", img: "img/desafio.jpg", esPasado: false },
+            "5": { titulo: "Film Symphony Orchestra - WANTED", fecha: "15-06-2026", lugar: "Teatro de La Laboral, Gijón", desc: "Un espectacular concierto de la Film Symphony Orchestra te espera en Gijón. Con WANTED, los míticos acordes del western cobran vida: silbidos al estilo Morricone, guitarras y el pulso de duelos al amanecer se funden en un show en vivo inolvidable para los amantes del cine y las bandas sonoras.", cat: "bg-musica", label: "Música", img: "img/fso-wanted.png", esPasado: false, precio: "Desde 42€" },
+            "6": { titulo: "Programación: Museo del Jurásico de Asturias (MUJA)", fecha: "01-06-2026", lugar: "Colunga, Asturias", desc: "Descubre la increíble programación especial de junio en el Museo del Jurásico de Asturias en Colunga. Disfruta de multitud de nuevos talleres dinámicos, exposiciones fascinantes y espectaculares reproducciones a tamaño real de dinosaurios en plena costa asturiana. ¡Ideal para toda la familia!<br><br><a href='https://www.museojurasicoasturias.com/agenda' target='_blank' class='text-expo hover:underline font-bold bg-orange-50 px-3 py-1 rounded inline-block'>🔗 Ver la agenda completa oficial aquí</a>", cat: "bg-expo", label: "Exposición", img: "img/muja.jpg", esPasado: false },
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        let evId = urlParams.get('id');
+
+        if(evId && eventosDB[evId]) {
+            const ev = eventosDB[evId];
+            document.getElementById('event-title').textContent = ev.titulo;
+            document.getElementById('event-date').textContent = ev.fecha;
+            document.getElementById('event-location').textContent = ev.lugar;
+            document.getElementById('event-description').innerHTML = ev.desc;
+            
+            const badge = document.getElementById('event-badge');
+            badge.className = `badge ${ev.cat}`;
+            badge.textContent = ev.label;
+            
+            const priceBadge = document.getElementById('event-price');
+            if (ev.precio) {
+                priceBadge.textContent = 'Precio: ' + ev.precio;
+                // Re-apply correct dynamic color text mapping based on category simply removing bg- prefix.
+                // Assuming standard fallback if none:
+                priceBadge.classList.replace('text-musica', `text-${ev.cat.split('-')[1]}`);
+                priceBadge.classList.remove('hidden');
+            } else {
+                priceBadge.classList.add('hidden');
+            }
+            
+            if (ev.img.includes('img/')) {
+                document.getElementById('event-image').src = ev.img;
+            } else {
+                document.getElementById('event-image').src = `https://images.unsplash.com/${ev.img}?w=1200&h=500&fit=crop`;
+            }
+
+            // Requisito del PDF: "Si el evento es uno ya pasado, debe mostrar una galería de imágenes"
+            if(ev.esPasado) {
+                document.getElementById('event-status').classList.remove('hidden');
+                document.getElementById('gallery-container').classList.remove('hidden');
+                document.getElementById('event-image').classList.add('grayscale-[30%]');
+            }
+        }
+    </script>
+</body>
+</html>
