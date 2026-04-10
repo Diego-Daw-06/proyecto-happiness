@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPINESS&Co - Inicio</title>
+    <!-- Mínimo 50% de Tailwind CSS obligatorio -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Cabecera -->
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-1 mb-4 sm:mb-0">
+                <span class="logo-text">HAPPINESS</span>
+                <span class="logo-amp">&</span>
+                <span class="logo-text text-xl">Co</span>
+            </a>
+
+            <!-- Menú Principal -->
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6 text-sm font-semibold">
+                    <li><a href="index.html" class="text-musica border-b-2 border-musica pb-1">Inicio</a></li>
+                    <li><a href="eventos.html" class="hover:text-musica transition">Próximos Eventos</a></li>
+                    <li><a href="historial.html" class="hover:text-musica transition">Historial de eventos</a></li>
+                    <li><a href="about.html" class="hover:text-musica transition">Sobre Nosotros</a></li>
+                    <li><a href="fuentes.html" class="hover:text-musica transition">Fuentes</a></li>
+                    <li><a href="contacto.html" class="hover:text-musica transition">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Imagen Grande (Banner Destacado) -->
+    <section class="relative w-full h-[60vh] bg-gray-900">
+        <img src="img/desafio.jpg" alt="Desafío Lagos de Covadonga" class="w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
+            <span class="bg-otro text-white text-xs font-bold px-3 py-1 rounded-full mb-4">Deporte</span>
+            <h1 class="text-4xl sm:text-6xl font-bold mb-2 shadow-sm text-balance">Desafío Lagos de Covadonga</h1>
+            <p class="text-xl sm:text-2xl font-light">05-06-2026</p>
+            <a href="evento.html?id=4"
+                class="mt-6 bg-white text-otro px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition shadow-lg">Ver
+                Evento</a>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-12 w-full grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+        <!-- Próximos Eventos -->
+        <div class="lg:col-span-3">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 border-b pb-2">Próximos eventos</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Evento 4 (Próximo) -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="img/desafio.jpg" alt="Ciclismo" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <span class="badge bg-otro mb-2 inline-block">Deporte</span>
+                        <div class="text-gray-500 text-sm font-semibold mb-1">05-06-2026</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Desafío Lagos de Covadonga</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">La mítica prueba cicloturista asturiana que
+                            corona la histórica subida a los Lagos.</p>
+                        <div class="flex justify-between items-end">
+                            <a href="evento.html?id=4" class="text-otro font-bold hover:underline">Leer más &rarr;</a>
+                            <span class="event-amp text-otro">&amp;</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Evento 5 (Próximo) -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="img/fso-wanted.png"
+                        alt="Música" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <span class="badge bg-musica mb-2 inline-block">Música</span>
+                        <div class="text-gray-500 text-sm font-semibold mb-1">15-06-2026</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Film Symphony Orchestra - WANTED</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Los míticos acordes del western cobran vida bajo la batuta de la mejor orquesta sinfónica de cine.</p>
+                        <div class="flex justify-between items-end">
+                            <a href="evento.html?id=5" class="text-musica font-bold hover:underline">Leer más &rarr;</a>
+                            <span class="event-amp text-musica">&amp;</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Evento 6 (Próximo) -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="img/muja.jpg"
+                        alt="Exposición" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <span class="badge bg-expo mb-2 inline-block">Exposición</span>
+                        <div class="text-gray-500 text-sm font-semibold mb-1">01-06-2026</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Programación: Museo Jurásico</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Actividades, exposiciones y talleres especiales durante todo junio para toda la familia en Colunga.</p>
+                        <div class="flex justify-between items-end">
+                            <a href="evento.html?id=6" class="text-expo font-bold hover:underline">Leer más &rarr;</a>
+                            <span class="event-amp text-expo">&amp;</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Lateral: Recomendados -->
+        <aside class="lg:col-span-1">
+            <h3 class="text-xl font-bold text-gray-900 mb-6 border-b pb-2">Recomendados</h3>
+            <div class="space-y-6">
+                <!-- Recomendado Historial -->
+                <div class="flex items-start bg-white p-3 rounded-lg shadow hover:shadow-md transition">
+                    <img src="img/jazz.png"
+                        alt="Rec1" class="w-16 h-16 rounded object-cover mr-3 grayscale-[30%]">
+                    <div>
+                        <div class="text-xs text-gray-500 font-semibold">01-01-2026</div>
+                        <h4 class="text-sm font-bold text-gray-900 leading-tight mb-1">Concierto de Año Nuevo de Jazz en la costa</h4>
+                        <a href="evento.html?id=1" class="text-xs text-musica font-bold hover:underline">Ver evento</a>
+                    </div>
+                </div>
+
+                <!-- Recomendado Cine -->
+                <div class="flex items-start bg-white p-3 rounded-lg shadow hover:shadow-md transition">
+                    <img src="img/in-edit.png"
+                        alt="Rec2" class="w-16 h-16 rounded object-cover mr-3 grayscale-[30%]">
+                    <div>
+                        <div class="text-xs text-gray-500 font-semibold">12-01-2026</div>
+                        <h4 class="text-sm font-bold text-gray-900 leading-tight mb-1">Festival IN-EDIT Gijón</h4>
+                        <a href="evento.html?id=2" class="text-xs text-cine font-bold hover:underline">Ver evento</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa de Asturias -->
+            <div class="mt-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 border-b pb-2">Ubicación</h3>
+                <div class="bg-white p-2 rounded-lg shadow hover:shadow-md transition">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d374464.717649563!2d-6.52975971488118!3d43.29813264426555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368c81216d50ff%3A0x6bba847c20c08b7d!2sAsturias!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                        width="100%" 
+                        height="220" 
+                        style="border:0; border-radius: 0.375rem;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Pie: Copyright y enlaces a redes -->
+    <footer class="bg-gray-900 text-white py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <p class="font-bold text-xl tracking-wider mb-2 text-gray-200">HAPPINESS&Co</p>
+                <p class="text-gray-400 text-sm">&copy; 2026 Todos los derechos reservados.</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <span class="sr-only">Facebook</span>
+                    <!-- Icono FB -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <span class="sr-only">Instagram</span>
+                    <!-- Icono IG -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <span class="sr-only">Twitter</span>
+                    <!-- Icono TW -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

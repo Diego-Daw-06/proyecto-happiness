@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+@font-face {
+    font-family: 'Asenine';
+    src: local('Asenine'), local('Arial');
+}
+
+@font-face {
+    font-family: 'Ar Chistry';
+    src: local('Ar Chistry'), local('Arial');
+}
+
+:root {
+    --color-musica: #ba007c;
+    --color-cine: #009bdb;
+    --color-expo: #ff7b00;
+    --color-otro: #555555;
+    --font-sans: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+}
+
+/* Configuraciones de Logo */
+.logo-text {
+    font-family: 'Asenine', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.logo-amp {
+    font-family: 'Ar Chistry', sans-serif;
+    color: var(--color-musica);
+    font-size: 2rem;
+}
+
+/* Símbolo para pie de eventos */
+.event-amp {
+    font-family: 'Ar Chistry', sans-serif;
+    font-size: 3rem;
+    display: block;
+    line-height: 1;
+}
+
+/* Utilidades para Categorías (Tailwind-like) */
+.bg-musica { background-color: var(--color-musica); }
+.text-musica { color: var(--color-musica); }
+.border-musica { border-color: var(--color-musica); }
+
+.bg-cine { background-color: var(--color-cine); }
+.text-cine { color: var(--color-cine); }
+.border-cine { border-color: var(--color-cine); }
+
+.bg-expo { background-color: var(--color-expo); }
+.text-expo { color: var(--color-expo); }
+.border-expo { border-color: var(--color-expo); }
+
+.bg-otro { background-color: var(--color-otro); }
+.text-otro { color: var(--color-otro); }
+
+/* Insignias */
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Galería de eventos pasados */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
