@@ -86,10 +86,10 @@
                 </div>
                 
                 <div class="flex items-start bg-white p-3 rounded-lg shadow hover:shadow-md transition">
-                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=100&h=100&fit=crop" alt="Rec" class="w-16 h-16 rounded object-cover mr-3">
+                    <img src="img/muja.jpg" alt="MUJA" class="w-16 h-16 rounded object-cover mr-3">
                     <div>
-                        <div class="text-xs text-gray-500 font-semibold">25-06-2026</div>
-                        <h4 class="text-sm font-bold text-gray-900 leading-tight mb-1">Expresionismo</h4>
+                        <div class="text-xs text-gray-500 font-semibold">01-06-2026</div>
+                        <h4 class="text-sm font-bold text-gray-900 leading-tight mb-1">Programación MUJA</h4>
                         <a href="evento.html?id=6" class="text-xs text-expo font-bold hover:underline">Ver recomendación</a>
                     </div>
                 </div>
@@ -115,9 +115,9 @@
     <script>
         // Simulador de BD de acuerdo a las bases
         const eventosDB = {
-            "1": { titulo: "Concierto de Año Nuevo de Jazz en la costa", fecha: "01-01-2026", lugar: "Costa Asturiana", desc: "El mayor evento musical del comienzo del año junto al mar. Disfrutamos inaugurando el año con asombrosos artistas locales de Jazz e internacionales.", cat: "bg-musica", label: "Música", img: "img/jazz.png", esPasado: true },
-            "2": { titulo: "Festival IN-EDIT Gijón", fecha: "12-01-2026", lugar: "Gijón", desc: "La nueva edición del prestigioso festival de cine documental musical IN-EDIT llega a Gijón. Se presentarán multitud de películas, cortos y documentales indispensables sobre los artistas que revolucionaron la historia universal de la música.", cat: "bg-cine", label: "Cine", img: "img/in-edit.png", esPasado: true },
-            "3": { titulo: "Arte Moderno", fecha: "24-01-2026", lugar: "Museo Central", desc: "Bienal internacional de arte moderno pictórico.", cat: "bg-expo", label: "Exposición", img: "photo-1462684590040-2a5ffb1d4d60", esPasado: true },
+            "1": { titulo: "Concierto de Año Nuevo de Jazz en la costa", fecha: "01-01-2026", lugar: "Costa Asturiana", desc: "El mayor evento musical del comienzo del año junto al mar. Disfrutamos inaugurando el año con asombrosos artistas locales de Jazz e internacionales.", cat: "bg-musica", label: "Música", img: "img/jazz.png", esPasado: true, galeria: ["img/jazz-galeria-1.png", "img/jazz-galeria-2.png", "img/jazz-galeria-3.jpg", "img/jazz-galeria-4.png"] },
+            "2": { titulo: "Festival IN-EDIT Gijón", fecha: "12-01-2026", lugar: "Gijón", desc: "La nueva edición del prestigioso festival de cine documental musical IN-EDIT llega a Gijón. Se presentarán multitud de películas, cortos y documentales indispensables sobre los artistas que revolucionaron la historia universal de la música.", cat: "bg-cine", label: "Cine", img: "img/in-edit.png", esPasado: true, galeria: ["img/inedit-galeria-1.jpg", "img/inedit-galeria-2.png", "img/inedit-galeria-3.jpg", "img/inedit-galeria-4.jpg"] },
+            "3": { titulo: "Fiesta de El Guirria y del Aguinaldo", fecha: "06-01-2026", lugar: "San Xuan de Beleño, Ponga (Asturias)", desc: "Una de las fiestas más singulares y ancestrales de Asturias, declarada de Interés Turístico Regional. El Guirria, un personaje enmascarado y ataviado con pieles y cencerros, recorre el pueblo persiguiendo a los vecinos mientras se recolecta el aguinaldo (comida y bebida) para la celebración comunitaria. Una experiencia única que preserva la identidad y tradición del concejo de Ponga.<br><br><a href='https://www.turismoasturias.es/descubre/fiestas-de-interes-turistico/fiesta-de-el-aguinaldo-y-del-guirria' target='_blank' class='text-expo hover:underline font-bold bg-orange-50 px-3 py-1 rounded inline-block'>🔗 Más información en Turismo Asturias</a>", cat: "bg-expo", label: "Cultura", img: "img/guirria.png", esPasado: true, galeria: ["img/guirria-galeria-1.png", "img/guirria-galeria-2.png", "img/guirria-galeria-3.png", "img/guirria-galeria-4.jpg"] },
             "4": { titulo: "Desafío Lagos de Covadonga", fecha: "05-06-2026", lugar: "Cangas de Onís, Lagos de Covadonga", desc: "La mítica prueba cicloturista asturiana rodeando los lagos glaciares del Parque Nacional Picos de Europa. Un reto deportivo inigualable.", cat: "bg-otro", label: "Deporte", img: "img/desafio.jpg", esPasado: false },
             "5": { titulo: "Film Symphony Orchestra - WANTED", fecha: "15-06-2026", lugar: "Teatro de La Laboral, Gijón", desc: "Un espectacular concierto de la Film Symphony Orchestra te espera en Gijón. Con WANTED, los míticos acordes del western cobran vida: silbidos al estilo Morricone, guitarras y el pulso de duelos al amanecer se funden en un show en vivo inolvidable para los amantes del cine y las bandas sonoras.", cat: "bg-musica", label: "Música", img: "img/fso-wanted.png", esPasado: false, precio: "Desde 42€" },
             "6": { titulo: "Programación: Museo del Jurásico de Asturias (MUJA)", fecha: "01-06-2026", lugar: "Colunga, Asturias", desc: "Descubre la increíble programación especial de junio en el Museo del Jurásico de Asturias en Colunga. Disfruta de multitud de nuevos talleres dinámicos, exposiciones fascinantes y espectaculares reproducciones a tamaño real de dinosaurios en plena costa asturiana. ¡Ideal para toda la familia!<br><br><a href='https://www.museojurasicoasturias.com/agenda' target='_blank' class='text-expo hover:underline font-bold bg-orange-50 px-3 py-1 rounded inline-block'>🔗 Ver la agenda completa oficial aquí</a>", cat: "bg-expo", label: "Exposición", img: "img/muja.jpg", esPasado: false },
@@ -159,6 +159,11 @@
                 document.getElementById('event-status').classList.remove('hidden');
                 document.getElementById('gallery-container').classList.remove('hidden');
                 document.getElementById('event-image').classList.add('grayscale-[30%]');
+
+                if (ev.galeria) {
+                    const galeriaDiv = document.querySelector('.galeria');
+                    galeriaDiv.innerHTML = ev.galeria.map(imgSrc => `<img src="${imgSrc}" alt="Recuerdo">`).join('');
+                }
             }
         }
     </script>
