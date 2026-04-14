@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>HAPPINESS&amp;Co - Eventos</title>
+    <link>index.html</link>
+    <description>Próximos eventos y noticias de HAPPINESS&amp;Co</description>
+    <language>es-es</language>
+    <item>
+      <title>Concierto de Año Nuevo de Jazz en la costa</title>
+      <link>evento.html?id=1</link>
+      <description>El mayor evento musical del comienzo del año junto al mar. Disfrutamos inaugurando el año con asombrosos artistas locales de Jazz e internacionales.</description>
+      <category>Música</category>
+      <pubDate>Thu, 01 Jan 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Fiesta de El Guirria y del Aguinaldo</title>
+      <link>evento.html?id=3</link>
+      <description>Una de las fiestas más singulares y ancestrales de Asturias, declarada de Interés Turístico Regional. Tradición única en Ponga.</description>
+      <category>Cultura</category>
+      <pubDate>Tue, 06 Jan 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Festival IN-EDIT Gijón</title>
+      <link>evento.html?id=2</link>
+      <description>La nueva edición del prestigioso festival de cine documental musical IN-EDIT llega a Gijón. Películas y documentales imprescindibles.</description>
+      <category>Cine</category>
+      <pubDate>Mon, 12 Jan 2026 17:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Programación: Museo del Jurásico de Asturias (MUJA)</title>
+      <link>evento.html?id=6</link>
+      <description>Programación especial de junio en el MUJA. Talleres, exposiciones y dinosaurios a tamaño real en plena costa asturiana.</description>
+      <category>Exposición</category>
+      <pubDate>Mon, 01 Jun 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Desafío Lagos de Covadonga</title>
+      <link>evento.html?id=4</link>
+      <description>La mítica prueba cicloturista asturiana rodeando los lagos glaciares del Parque Nacional Picos de Europa.</description>
+      <category>Deporte</category>
+      <pubDate>Fri, 05 Jun 2026 08:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Film Symphony Orchestra - WANTED</title>
+      <link>evento.html?id=5</link>
+      <description>Espectacular concierto de la Film Symphony Orchestra en Gijón. Los míticos acordes del western cobran vida.</description>
+      <category>Música</category>
+      <pubDate>Mon, 15 Jun 2026 20:30:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
