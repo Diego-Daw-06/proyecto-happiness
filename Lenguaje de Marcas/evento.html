@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAPPINESS&Co - Detalles del Evento</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="alternate" type="application/rss+xml" title="HAPPINESS&Co Feed" href="rss.xml">
 </head>
+
 <body class="text-gray-800 flex flex-col min-h-screen bg-gray-50">
-    
+
     <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-1 mb-4 sm:mb-0">
-                <span class="logo-text">HAPPINESS</span>
-                <span class="logo-amp">&</span>
-                <span class="logo-text text-xl">Co</span>
+            <a href="index.html" class="flex items-center mb-4 sm:mb-0">
+                <img src="img/logo-happiness.jpg" alt="HAPPINESS & Co" class="h-10 w-auto">
             </a>
             <nav>
                 <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6 text-sm font-semibold">
@@ -30,35 +31,52 @@
     </header>
 
     <main class="flex-grow max-w-7xl mx-auto px-4 py-12 w-full grid grid-cols-1 lg:grid-cols-4 gap-8">
-        
+
         <article class="lg:col-span-3 bg-white rounded-xl shadow-lg overflow-hidden">
             <!-- Imagen del evento / cartel -->
-            <img id="event-image" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=500&fit=crop" alt="Cartel del Evento" class="w-full h-64 sm:h-96 object-cover">
-            
+            <img id="event-image"
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=500&fit=crop"
+                alt="Cartel del Evento" class="w-full h-64 sm:h-96 object-cover">
+
             <div class="p-8">
                 <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 gap-2">
                     <div class="flex items-center gap-3">
                         <span id="event-badge" class="badge bg-musica">Música</span>
-                        <span id="event-price" class="hidden text-xs font-bold bg-pink-100 text-musica px-3 py-1 rounded-full border border-pink-200"></span>
+                        <span id="event-price"
+                            class="hidden text-xs font-bold bg-pink-100 text-musica px-3 py-1 rounded-full border border-pink-200"></span>
                     </div>
-                    <span id="event-status" class="hidden text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded font-bold uppercase tracking-wider">Ya celebrado</span>
+                    <span id="event-status"
+                        class="hidden text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded font-bold uppercase tracking-wider">Ya
+                        celebrado</span>
                 </div>
                 <h1 id="event-title" class="text-4xl font-bold text-gray-900 mb-4">Noche de Jazz en Vivo</h1>
-                
+
                 <div class="flex flex-wrap gap-6 text-gray-600 mb-8 border-b border-gray-200 pb-6">
                     <p class="flex items-center">
-                        <svg class="w-5 h-5 mr-2 text-musica" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <svg class="w-5 h-5 mr-2 text-musica" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
                         <strong class="mr-1">Fecha:</strong> <span id="event-date">05-06-2026</span>
                     </p>
                     <p class="flex items-center">
-                        <svg class="w-5 h-5 mr-2 text-musica" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <svg class="w-5 h-5 mr-2 text-musica" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
                         <strong class="mr-1">Lugar:</strong> <span id="event-location">Centro Cultural Municipal</span>
                     </p>
                 </div>
 
                 <div class="prose max-w-none text-gray-700 text-lg space-y-4">
                     <p id="event-description">
-                        Disfruta de una velada excepcional con las mejores bandas de jazz de la región. Vive la magia de The Blue Notes Quarter tocando sus temas más exitosos bajo el firmamento. La entrada incluye una consumición y acceso preferente. ¡Garantizamos una experiencia sonora inigualable para los amantes del saxofón y los ritmos improvisados!
+                        Disfruta de una velada excepcional con las mejores bandas de jazz de la región. Vive la magia de
+                        The Blue Notes Quarter tocando sus temas más exitosos bajo el firmamento. La entrada incluye una
+                        consumición y acceso preferente. ¡Garantizamos una experiencia sonora inigualable para los
+                        amantes del saxofón y los ritmos improvisados!
                     </p>
                 </div>
 
@@ -66,12 +84,61 @@
                 <div id="gallery-container" class="hidden mt-12 bg-gray-50 -mx-8 -mb-8 p-8 border-t border-gray-100">
                     <h3 class="text-2xl font-bold text-gray-900 mb-6">Galería del Evento</h3>
                     <div class="galeria">
-                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=300&h=300&fit=crop" alt="Recuerdo 1">
-                        <img src="https://images.unsplash.com/photo-1540039155732-684735035727?w=300&h=300&fit=crop" alt="Recuerdo 2">
-                        <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=300&h=300&fit=crop" alt="Recuerdo 3">
-                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&h=300&fit=crop" alt="Recuerdo 4">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=300&h=300&fit=crop"
+                            alt="Recuerdo 1">
+                        <img src="https://images.unsplash.com/photo-1540039155732-684735035727?w=300&h=300&fit=crop"
+                            alt="Recuerdo 2">
+                        <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=300&h=300&fit=crop"
+                            alt="Recuerdo 3">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&h=300&fit=crop"
+                            alt="Recuerdo 4">
                     </div>
                 </div>
+
+                <!-- SECCIÓN DE COMPRA / REGISTRO (Solo visible para eventos próximos) -->
+                <div id="booking-section" class="hidden mt-12 bg-gray-50 -mx-8 -mb-8 p-8 border-t border-gray-100">
+                    <div class="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Reserva tu plaza</h3>
+                        <p class="text-gray-600 mb-6">Completa el formulario para asegurar tu asistencia al evento.</p>
+                        
+                        <form id="booking-form" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1" for="name">Nombre completo</label>
+                                    <input type="text" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-musica focus:border-transparent outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1" for="email">Email</label>
+                                    <input type="email" id="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-musica focus:border-transparent outline-none transition">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1" for="quantity">Nº de entradas</label>
+                                    <select id="quantity" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-musica focus:border-transparent outline-none transition">
+                                        <option value="1">1 entrada</option>
+                                        <option value="2">2 entradas</option>
+                                        <option value="3">3 entradas</option>
+                                        <option value="4">4 entradas</option>
+                                        <option value="more">Más de 4 (Contactar)</option>
+                                    </select>
+                                </div>
+                                <div class="flex items-end">
+                                    <button type="submit" id="submit-btn" class="w-full bg-musica text-white font-bold py-2 px-6 rounded-lg hover:bg-opacity-90 transition shadow-md">
+                                        Confirmar Reserva
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="success-msg" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-lg border border-green-100 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            ¡Registro completado con éxito! Recibirás un email de confirmación.
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </article>
 
@@ -82,15 +149,17 @@
                 <!-- Recomendado Historial -->
                 <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
                     <h4 class="font-bold text-gray-900 mb-2">Conciertos y más</h4>
-                    <p class="text-xs text-gray-600 mb-2">Tenemos la mayor red de festivales de la región disponibles en las mejores ubicaciones.</p>
+                    <p class="text-xs text-gray-600 mb-2">Tenemos la mayor red de festivales de la región disponibles en
+                        las mejores ubicaciones.</p>
                 </div>
-                
+
                 <div class="flex items-start bg-white p-3 rounded-lg shadow hover:shadow-md transition">
                     <img src="img/muja.jpg" alt="MUJA" class="w-16 h-16 rounded object-cover mr-3">
                     <div>
                         <div class="text-xs text-gray-500 font-semibold">01-06-2026</div>
                         <h4 class="text-sm font-bold text-gray-900 leading-tight mb-1">Programación MUJA</h4>
-                        <a href="evento.html?id=6" class="text-xs text-expo font-bold hover:underline">Ver recomendación</a>
+                        <a href="evento.html?id=6" class="text-xs text-expo font-bold hover:underline">Ver
+                            recomendación</a>
                     </div>
                 </div>
             </div>
@@ -100,13 +169,35 @@
     <footer class="bg-gray-900 text-white py-10 mt-auto">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
             <div class="mb-6 md:mb-0 text-center md:text-left">
-                <p class="font-bold text-xl tracking-wider mb-2 text-gray-200">HAPPINESS&Co</p>
+                <img src="img/logo-happiness-pie.png" alt="HAPPINESS & Co" class="h-10 w-auto">
                 <p class="text-gray-400 text-sm">&copy; 2026 Todos los derechos reservados.</p>
             </div>
             <div class="flex space-x-6">
-                <a href="#" class="text-gray-400 hover:text-white transition">FaceBook</a>
-                <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
-                <a href="#" class="text-gray-400 hover:text-white transition">Twitter</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <span class="sr-only">Facebook</span>
+                    <!-- Icono FB -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <span class="sr-only">Instagram</span>
+                    <!-- Icono IG -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <span class="sr-only">Twitter</span>
+                    <!-- Icono TW -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>
@@ -126,28 +217,26 @@
         const urlParams = new URLSearchParams(window.location.search);
         let evId = urlParams.get('id');
 
-        if(evId && eventosDB[evId]) {
+        if (evId && eventosDB[evId]) {
             const ev = eventosDB[evId];
             document.getElementById('event-title').textContent = ev.titulo;
             document.getElementById('event-date').textContent = ev.fecha;
             document.getElementById('event-location').textContent = ev.lugar;
             document.getElementById('event-description').innerHTML = ev.desc;
-            
+
             const badge = document.getElementById('event-badge');
             badge.className = `badge ${ev.cat}`;
             badge.textContent = ev.label;
-            
+
             const priceBadge = document.getElementById('event-price');
             if (ev.precio) {
                 priceBadge.textContent = 'Precio: ' + ev.precio;
-                // Re-apply correct dynamic color text mapping based on category simply removing bg- prefix.
-                // Assuming standard fallback if none:
                 priceBadge.classList.replace('text-musica', `text-${ev.cat.split('-')[1]}`);
                 priceBadge.classList.remove('hidden');
             } else {
                 priceBadge.classList.add('hidden');
             }
-            
+
             if (ev.img.includes('img/')) {
                 document.getElementById('event-image').src = ev.img;
             } else {
@@ -155,7 +244,7 @@
             }
 
             // Requisito del PDF: "Si el evento es uno ya pasado, debe mostrar una galería de imágenes"
-            if(ev.esPasado) {
+            if (ev.esPasado) {
                 document.getElementById('event-status').classList.remove('hidden');
                 document.getElementById('gallery-container').classList.remove('hidden');
                 document.getElementById('event-image').classList.add('grayscale-[30%]');
@@ -164,8 +253,25 @@
                     const galeriaDiv = document.querySelector('.galeria');
                     galeriaDiv.innerHTML = ev.galeria.map(imgSrc => `<img src="${imgSrc}" alt="Recuerdo">`).join('');
                 }
+            } else {
+                // Si es un evento próximo, mostramos la sección de reserva
+                const bookingSection = document.getElementById('booking-section');
+                bookingSection.classList.remove('hidden');
+                
+                // Ajustar colores según categoría
+                const themeColor = ev.cat.replace('bg-', '');
+                const submitBtn = document.getElementById('submit-btn');
+                submitBtn.classList.replace('bg-musica', `bg-${themeColor}`);
+                
+                // Manejo del formulario
+                document.getElementById('booking-form').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    document.getElementById('booking-form').classList.add('hidden');
+                    document.getElementById('success-msg').classList.remove('hidden');
+                });
             }
         }
     </script>
 </body>
+
 </html>

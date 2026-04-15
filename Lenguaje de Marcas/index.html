@@ -8,6 +8,8 @@
     <!-- Mínimo 50% de Tailwind CSS obligatorio -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="alternate" type="application/rss+xml" title="HAPPINESS&Co Feed" href="rss.xml">
+    <link rel="icon" type="image/png" href="img/happines-and-co-upper-02.png">
 </head>
 
 <body class="text-gray-800 flex flex-col min-h-screen">
@@ -15,10 +17,8 @@
     <!-- Cabecera -->
     <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-1 mb-4 sm:mb-0">
-                <span class="logo-text">HAPPINESS</span>
-                <span class="logo-amp">&</span>
-                <span class="logo-text text-xl">Co</span>
+            <a href="index.html" class="flex items-center mb-4 sm:mb-0">
+                <img src="img/logo-happiness.jpg" alt="HAPPINESS & Co" class="h-10 w-auto">
             </a>
 
             <!-- Menú Principal -->
@@ -65,41 +65,57 @@
                         <h3 class="text-lg font-bold text-gray-900 mb-2">Desafío Lagos de Covadonga</h3>
                         <p class="text-gray-600 text-sm mb-4 line-clamp-2">La mítica prueba cicloturista asturiana que
                             corona la histórica subida a los Lagos.</p>
-                        <div class="flex justify-between items-end">
-                            <a href="evento.html?id=4" class="text-otro font-bold hover:underline">Leer más &rarr;</a>
-                            <span class="event-amp text-otro">&amp;</span>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mt-auto">
+                            <div class="flex flex-wrap gap-2">
+                                <a href="evento.html?id=4"
+                                    class="bg-otro text-white text-sm font-bold px-4 py-2 rounded hover:bg-opacity-90 transition">¡Apúntate
+                                    ya!</a>
+                                <a href="evento.html?id=4"
+                                    class="text-otro text-sm font-bold hover:underline py-2">Detalles &rarr;</a>
+                            </div>
+                            <img src="img/happines-and-co-upper-02.jpg" alt="Marca" class="h-8 w-auto">
                         </div>
                     </div>
                 </article>
 
                 <!-- Evento 5 (Próximo) -->
                 <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                    <img src="img/fso-wanted.png"
-                        alt="Música" class="w-full h-48 object-cover">
+                    <img src="img/fso-wanted.png" alt="Música" class="w-full h-48 object-cover">
                     <div class="p-5">
                         <span class="badge bg-musica mb-2 inline-block">Música</span>
                         <div class="text-gray-500 text-sm font-semibold mb-1">15-06-2026</div>
                         <h3 class="text-lg font-bold text-gray-900 mb-2">Film Symphony Orchestra - WANTED</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Los míticos acordes del western cobran vida bajo la batuta de la mejor orquesta sinfónica de cine.</p>
-                        <div class="flex justify-between items-end">
-                            <a href="evento.html?id=5" class="text-musica font-bold hover:underline">Leer más &rarr;</a>
-                            <span class="event-amp text-musica">&amp;</span>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Los míticos acordes del western cobran vida
+                            bajo la batuta de la mejor orquesta sinfónica de cine.</p>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mt-auto">
+                            <div class="flex flex-wrap gap-2">
+                                <a href="evento.html?id=5"
+                                    class="bg-musica text-white text-sm font-bold px-4 py-2 rounded hover:bg-opacity-90 transition">Tickets</a>
+                                <a href="evento.html?id=5"
+                                    class="text-musica text-sm font-bold hover:underline py-2">Detalles &rarr;</a>
+                            </div>
+                            <img src="img/happines-and-co-upper-01.jpg" alt="Marca" class="h-8 w-auto">
                         </div>
                     </div>
                 </article>
 
                 <!-- Evento 6 (Próximo) -->
                 <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                    <img src="img/muja.jpg"
-                        alt="Exposición" class="w-full h-48 object-cover">
+                    <img src="img/muja.jpg" alt="Exposición" class="w-full h-48 object-cover">
                     <div class="p-5">
                         <span class="badge bg-expo mb-2 inline-block">Exposición</span>
                         <div class="text-gray-500 text-sm font-semibold mb-1">01-06-2026</div>
                         <h3 class="text-lg font-bold text-gray-900 mb-2">Programación: Museo Jurásico</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Actividades, exposiciones y talleres especiales durante todo junio para toda la familia en Colunga.</p>
-                        <div class="flex justify-between items-end">
-                            <a href="evento.html?id=6" class="text-expo font-bold hover:underline">Leer más &rarr;</a>
-                            <span class="event-amp text-expo">&amp;</span>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Actividades, exposiciones y talleres
+                            especiales durante todo junio para toda la familia en Colunga.</p>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mt-auto">
+                            <div class="flex flex-wrap gap-2">
+                                <a href="evento.html?id=6"
+                                    class="bg-expo text-white text-sm font-bold px-4 py-2 rounded hover:bg-opacity-90 transition">Reservar</a>
+                                <a href="evento.html?id=6"
+                                    class="text-expo text-sm font-bold hover:underline py-2">Detalles &rarr;</a>
+                            </div>
+                            <img src="img/happines-and-co-upper-03.jpg" alt="Marca" class="h-8 w-auto">
                         </div>
                     </div>
                 </article>
@@ -112,22 +128,23 @@
             <div class="space-y-6">
                 <!-- Recomendado Historial -->
                 <div class="flex items-start bg-white p-3 rounded-lg shadow hover:shadow-md transition">
-                    <img src="img/guirria.png"
-                        alt="Guirria" class="w-16 h-16 rounded object-cover mr-3 grayscale-[30%]">
+                    <img src="img/guirria.png" alt="Guirria"
+                        class="w-16 h-16 rounded object-cover mr-3 grayscale-[30%]">
                     <div>
                         <div class="text-xs text-gray-500 font-semibold">06-01-2026</div>
-                        <h4 class="text-sm font-bold text-gray-900 leading-tight mb-1">Fiesta de El Guirria y del Aguinaldo</h4>
+                        <h4 class="text-sm font-bold text-gray-900 leading-tight mb-1">Fiesta de El Guirria y del
+                            Aguinaldo</h4>
                         <a href="evento.html?id=3" class="text-xs text-expo font-bold hover:underline">Ver evento</a>
                     </div>
                 </div>
 
                 <!-- Recomendado Música -->
                 <div class="flex items-start bg-white p-3 rounded-lg shadow hover:shadow-md transition">
-                    <img src="img/fso-wanted.png"
-                        alt="FSO" class="w-16 h-16 rounded object-cover mr-3">
+                    <img src="img/fso-wanted.png" alt="FSO" class="w-16 h-16 rounded object-cover mr-3">
                     <div>
                         <div class="text-xs text-gray-500 font-semibold">15-06-2026</div>
-                        <h4 class="text-sm font-bold text-gray-900 leading-tight mb-1">Film Symphony Orchestra - WANTED</h4>
+                        <h4 class="text-sm font-bold text-gray-900 leading-tight mb-1">Film Symphony Orchestra - WANTED
+                        </h4>
                         <a href="evento.html?id=5" class="text-xs text-musica font-bold hover:underline">Ver evento</a>
                     </div>
                 </div>
@@ -137,14 +154,10 @@
             <div class="mt-8">
                 <h3 class="text-xl font-bold text-gray-900 mb-4 border-b pb-2">Ubicación</h3>
                 <div class="bg-white p-2 rounded-lg shadow hover:shadow-md transition">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d374464.717649563!2d-6.52975971488118!3d43.29813264426555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368c81216d50ff%3A0x6bba847c20c08b7d!2sAsturias!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
-                        width="100%" 
-                        height="220" 
-                        style="border:0; border-radius: 0.375rem;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d374464.717649563!2d-6.52975971488118!3d43.29813264426555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368c81216d50ff%3A0x6bba847c20c08b7d!2sAsturias!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+                        width="100%" height="220" style="border:0; border-radius: 0.375rem;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
             </div>
@@ -155,7 +168,7 @@
     <footer class="bg-gray-900 text-white py-10 mt-auto">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
             <div class="mb-6 md:mb-0 text-center md:text-left">
-                <p class="font-bold text-xl tracking-wider mb-2 text-gray-200">HAPPINESS&Co</p>
+                <img src="img/logo-happiness-pie.png" alt="HAPPINESS & Co" class="h-10 w-auto">
                 <p class="text-gray-400 text-sm">&copy; 2026 Todos los derechos reservados.</p>
             </div>
 
@@ -184,6 +197,13 @@
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path
                             d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                    </svg>
+                </a>
+                <a href="rss.xml" class="text-gray-400 hover:text-white transition" title="RSS Feed">
+                    <span class="sr-only">RSS</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-8.18v4.81c10.563.061 19.123 8.614 19.184 19.175h4.816c-.06-13.221-10.778-23.926-24-23.985z" />
                     </svg>
                 </a>
             </div>
