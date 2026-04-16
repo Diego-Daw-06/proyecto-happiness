@@ -53,10 +53,8 @@
 │   └── schema.sql        # Creación de tablas y vistas
 └── img/                  # Assets y recursos visuales
 
-![Pagina de inicio](img/Pagina%20de%20inicio.png)
-![Pagina de eventos](img/Pagina%20de%20eventos.png)
-![Pagina de detalle](img/Pagina%20de%20detalle.png)
-![Pagina de historial](img/Pagina%20de%20historial.png)
-![Pagina de nosotros](img/Pagina%20de%20nosotros.png)
-![Pagina de contacto](img/Pagina%20de%20contacto.png)
-![Pagina de rss](img/Pagina%20de%20rss.png)
+![Pagina de inicio](./Lenguaje%20de%20Marcas/img/captura%20Inicio.png)
+![Pagina de eventos](./Lenguaje%20deMarcas/img/captura%20Proximos.png)
+![Pagina de historial](./Lenguaje%20de%20Marcas/img/captura%20Historial.png)
+![Pagina de nosotros](./Lenguaje%20de%20Marcas/img/captura%20SobreNosotros.png)
+![Pagina de contacto](./Lenguaje%20de%20Marcas/img/captura%20Contacto.png)
