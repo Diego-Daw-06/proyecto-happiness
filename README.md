@@ -52,3 +52,11 @@
 ├── database/             # Scripts de base de datos
 │   └── schema.sql        # Creación de tablas y vistas
 └── img/                  # Assets y recursos visuales
+
+![Pagina de inicio](img/Pagina%20de%20inicio.png)
+![Pagina de eventos](img/Pagina%20de%20eventos.png)
+![Pagina de detalle](img/Pagina%20de%20detalle.png)
+![Pagina de historial](img/Pagina%20de%20historial.png)
+![Pagina de nosotros](img/Pagina%20de%20nosotros.png)
+![Pagina de contacto](img/Pagina%20de%20contacto.png)
+![Pagina de rss](img/Pagina%20de%20rss.png)
