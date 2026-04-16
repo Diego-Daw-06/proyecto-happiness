@@ -52,26 +52,39 @@ INSERT INTO Usuarios (nombre, email, password) VALUES
     
     
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES 
-(1, '2026-01-01', 'Concierto de Año Nuevo', 'Teatro Principal', 'Música clásica para empezar el año.'),
-(2, '2026-01-12', 'Exposición de Arte Moderno', 'Galería Central', 'Muestra de artistas locales contemporáneos.'),
-(3, '2026-01-24', 'Obra de Teatro: El Sueño', 'Centro Cultural', 'Representación dramática en tres actos.');
+(1, '2026-01-01', 'Concierto de Año Nuevo de Jazz en la costa', 'Costa Asturiana', 'El mayor evento musical del comienzo del año junto al mar. Disfrutamos inaugurando el año con asombrosos artistas locales de Jazz e internacionales.'),
+(2, '2026-01-12', 'Festival IN-EDIT Gijón', 'Gijón', 'La nueva edición del prestigioso festival de cine documental musical IN-EDIT llega a Gijón. Se presentarán multitud de películas, cortos y documentales sobre los artistas que revolucionaron la historia universal de la música.'),
+(3, '2026-01-06', 'Fiesta de El Guirria y del Aguinaldo', 'San Xuan de Beleño, Ponga (Asturias)', 'Una de las fiestas más singulares y ancestrales de Asturias, declarada de Interés Turístico Regional. El Guirria recorre el pueblo persiguiendo a los vecinos mientras se recolecta el aguinaldo para la celebración comunitaria.');
 
 INSERT INTO Eventos (id, fecha, titulo, ubicacion, descripcion) VALUES 
-(4, '2026-06-05', 'Festival de Jazz', 'Parque de la Paz', 'Jazz al aire libre con artistas internacionales.'),
-(5, '2026-06-15', 'Cine de Verano', 'Plaza Mayor', 'Proyección de clásicos del cine bajo las estrellas.'),
-(6, '2026-06-25', 'Feria de Gastronomía', 'Recinto Ferial', 'Degustación de platos típicos regionales.');
+(4, '2026-06-05', 'Desafío Lagos de Covadonga', 'Cangas de Onís, Lagos de Covadonga', 'La mítica prueba cicloturista asturiana rodeando los lagos glaciares del Parque Nacional Picos de Europa. Un reto deportivo inigualable.'),
+(5, '2026-06-15', 'Film Symphony Orchestra - WANTED', 'Teatro de La Laboral, Gijón', 'Un espectacular concierto de la Film Symphony Orchestra en Gijón. Los míticos acordes del western cobran vida: silbidos al estilo Morricone, guitarras y duelos al amanecer en un show en vivo inolvidable.'),
+(6, '2026-06-01', 'Programación: Museo del Jurásico de Asturias (MUJA)', 'Colunga, Asturias', 'Descubre la increíble programación especial de junio en el Museo del Jurásico de Asturias en Colunga. Talleres dinámicos, exposiciones fascinantes y reproducciones a tamaño real de dinosaurios. Ideal para toda la familia.');
 
 -- Galerías para los 3 eventos del historial
 INSERT INTO Galerias (id, titulo, id_evento) VALUES 
-(1, 'Fotos Concierto Enero', 1),
-(2, 'Fotos Exposición Enero', 2),
-(3, 'Fotos Teatro Enero', 3);
+(1, 'Galería Jazz Año Nuevo', 1),
+(2, 'Galería IN-EDIT Gijón', 2),
+(3, 'Galería Fiesta El Guirria', 3);
 
--- Imágenes (3 por galería)
+-- Imágenes (4 por galería, según el HTML)
 INSERT INTO Imagenes_Galerias (titulo, imagen, id_galeria) VALUES 
-('Inicio Concierto', 'img1.jpg', 1), ('Solo de Piano', 'img2.jpg', 1), ('Aplausos Finales', 'img3.jpg', 1),
-('Cuadro Principal', 'img4.jpg', 2), ('Escultura Bronce', 'img5.jpg', 2), ('Vista Sala', 'img6.jpg', 2),
-('Escenario Vacío', 'img7.jpg', 3), ('Actor Principal', 'img8.jpg', 3), ('Salida Público', 'img9.jpg', 3);
+('Jazz Galería 1', 'img/jazz-galeria-1.png', 1),
+('Jazz Galería 2', 'img/jazz-galeria-2.png', 1),
+('Jazz Galería 3', 'img/jazz-galeria-3.jpg', 1),
+('Jazz Galería 4', 'img/jazz-galeria-4.png', 1);
+
+INSERT INTO Imagenes_Galerias (titulo, imagen, id_galeria) VALUES 
+('IN-EDIT Galería 1', 'img/inedit-galeria-1.jpg', 2),
+('IN-EDIT Galería 2', 'img/inedit-galeria-2.png', 2),
+('IN-EDIT Galería 3', 'img/inedit-galeria-3.jpg', 2),
+('IN-EDIT Galería 4', 'img/inedit-galeria-4.jpg', 2);
+
+INSERT INTO Imagenes_Galerias (titulo, imagen, id_galeria) VALUES 
+('Guirria Galería 1', 'img/guirria-galeria-1.png', 3),
+('Guirria Galería 2', 'img/guirria-galeria-2.png', 3),
+('Guirria Galería 3', 'img/guirria-galeria-3.png', 3),
+('Guirria Galería 4', 'img/guirria-galeria-4.jpg', 3);
 
 INSERT INTO Favoritos (id_usuario, id_evento) VALUES 
 (1, 1), (1, 2), (1, 4), -- Usuario 1: 2 pasados, 1 futuro
